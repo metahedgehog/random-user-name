@@ -2,9 +2,6 @@ import random
 import subprocess
 import subprocess
 
-with open("requirements.txt", "w") as file:
-    subprocess.run(["pip", "freeze"], stdout=file)
-
 word_list = [
     "lagoon", "breeze", "serenade", "cascade", "glimmer", "tundra", "quasar",
     "zephyr", "marvel", "wanderlust", "twilight", "delight", "ethereal",
