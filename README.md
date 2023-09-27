@@ -16,6 +16,6 @@ ___
 
 ### Why it exists?
 
-I used to generate usernames for virtual machines which I preconfigure with Ansible.
+I use it to generate usernames for virtual machines which I preconfigure with Ansible.
 
 Feel free to use :)
