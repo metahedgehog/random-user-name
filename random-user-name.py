@@ -1,8 +1,10 @@
 import random
 import subprocess
-import subprocess
+from flask import Flask, jsonify
 
-word_list = [
+app = Flask(__name__)
+
+word_list = word_list = [
     "lagoon", "breeze", "serenade", "cascade", "glimmer", "tundra", "quasar",
     "zephyr", "marvel", "wanderlust", "twilight", "delight", "ethereal",
     "lullaby", "velvet", "solitude", "meadow", "ponder", "bliss", "mirage",
@@ -47,6 +49,10 @@ word_list = [
     "glimmer", "dazzle", "tranquil", "radiant"
 ]
 
-selected_word = random.choice(word_list)
+@app.route('/', methods=['GET'])
+def get_random_word():
+    selected_word = random.choice(word_list)
+    return jsonify({"word": selected_word})
 
-print(selected_word)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80)
