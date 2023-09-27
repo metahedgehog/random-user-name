@@ -1,7 +1,10 @@
 import random
 import subprocess
+import subprocess
 
-# List of words
+with open("requirements.txt", "w") as file:
+    subprocess.run(["pip", "freeze"], stdout=file)
+
 word_list = [
     "lagoon", "breeze", "serenade", "cascade", "glimmer", "tundra", "quasar",
     "zephyr", "marvel", "wanderlust", "twilight", "delight", "ethereal",
@@ -47,8 +50,6 @@ word_list = [
     "glimmer", "dazzle", "tranquil", "radiant"
 ]
 
-# Pick a random word
 selected_word = random.choice(word_list)
 
-# Print the selected word
 print(selected_word)
