@@ -52,7 +52,7 @@ word_list = word_list = [
 @app.route('/', methods=['GET'])
 def get_random_word():
     selected_word = random.choice(word_list)
-    return jsonify({"word": selected_word})
+    return selected_word
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
