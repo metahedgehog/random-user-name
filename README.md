@@ -12,6 +12,7 @@ ___
 ```bash
  curl https://random-user-name.azurewebsites.net/
 ```
+___
 
 ### Why it exists?
 
