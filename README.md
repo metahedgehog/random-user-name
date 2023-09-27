@@ -1,4 +1,5 @@
-# random-user-name
+# Intenet-accesed Random Word Generator
+
 Extremely simple application that returns a word from the array of 300 random words. Could be accessible via 'curl'. Runs on the Microsoft Azure free app plan.
 
 ___
